@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lanchonete Delícia</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <h1>Lanchonete Delícia</h1>
+  <form id="formPedido">
+    <div class="produto">
+      <label><input type="checkbox" name="item" value="Hambúrguer"> Hambúrguer</label>
+    </div>
+    <div class="produto">
+      <label><input type="checkbox" name="item" value="Refrigerante"> Refrigerante</label>
+    </div>
+    <div class="produto">
+      <label><input type="checkbox" name="item" value="Suco"> Suco</label>
+    </div>
+    <div class="produto">
+      <label><input type="checkbox" name="item" value="Batata Frita"> Batata Frita</label>
+    </div>
+    <input type="text" id="nomeCliente" placeholder="Digite seu nome" onfocus="focoCampo()" />
+    <br><br>
+    <button type="button" onclick="fazerPedido()">Fazer Pedido</button>
+  </form>
+
+  <div id="resumo"></div>
+ 
+   <script src="./script.js"></script>
+</body>
+</html>
